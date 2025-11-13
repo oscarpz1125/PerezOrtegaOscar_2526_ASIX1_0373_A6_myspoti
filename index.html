@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chase Atlantic</title>
+    <link rel="icon" type="image/png" href="./img/Disco2.avif">
+
+    <style>
+        /* ===== Estilos principales ===== */
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background-image: url('./img/chaseheader.jpg');
+            background-size : contain;
+            background-position: center;
+            width: 100%;
+            height: 200px;
+            border-bottom: 3px solid #ff007f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        
+
+        /* ===== Imagen central ===== */
+        .decoracion {
+            margin: 40px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .decoracion img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ===== Títulos ===== */
+        h2 {
+            color: #00ffff;
+            padding-top: 40px;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        /* ===== Texto general ===== */
+        p {
+            margin: 20px auto;
+            max-width: 800px;
+            line-height: 1.6;
+            text-align: justify;
+            padding: 0 20px;
+        }
+
+        /* ===== Lista de álbumes ===== */
+        .album-list {
+            list-style: none;
+            padding: 0;
+            margin: 40px auto;
+            max-width: 900px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .album-item {
+            background-color: #222;
+            border: 1px solid #ff007f;
+            padding: 15px;
+            width: 250px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            text-align: left;
+        }
+
+        .album-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .album-item h3 {
+            color: #00ffff;
+            margin-top: 0;
+            border-bottom: 1px dashed #444;
+            padding-bottom: 5px;
+        }
+
+        .album-item p {
+            font-size: 0.9em;
+            margin: 5px 0;
+            padding: 0;
+            text-align: left;
+        }
+
+        /* ===== SECCIÓN DE NAVEGACIÓN ===== */
+        .nav-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 60px auto;
+            max-width: 900px;
+        }
+
+        .nav-card {
+            background-color: #111;
+            border: 1px solid #ff007f;
+            border-radius: 10px;
+            padding: 20px;
+            width: 260px;
+        }
+
+
+        .nav-card h3 {
+            color: #00ffff;
+            margin-bottom: 10px;
+        }
+
+        .nav-card p {
+            font-size: 0.9em;
+            text-align: justify;
+        }
+
+        .nav-card a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: #ff007f;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .nav-card a:hover {
+            background-color: #ff66a3;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+
+        <!-- ===== Imagen decorativa ===== -->
+        <div class="decoracion">
+            <img src="./img/chasevivo.jpg" alt="Chase Atlantic en vivo">
+        </div>
+
+        <!-- ===== Links para ir a otras paginas===== -->
+        <section class="nav-section">
+            <div class="nav-card">
+                <h3>Discografía 💿</h3>
+                <p>Pulsa el boton para ver los distintos albumes de Chase Atlantic.</p>
+                <a href="./discografia/chase.html">Ver Discografía</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

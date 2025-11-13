@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discografía Chase Atlantic</title>
+    <style>
+        body { 
+            background: #000; 
+            color: #fff; 
+            font-family: sans-serif; 
+            margin: 0; 
+            text-align: center; 
+        }
+
+        .container { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 0 10px; 
+        }
+        
+        /* Fondo de header con imagen y línea magenta */
+        .banner { 
+            background: url('../img/chaseheader.jpg') center no-repeat; 
+            height: 150px; 
+            border-bottom: 4px solid #ff33cc; 
+        }
+
+        h2 { 
+            color: #00e6e6; 
+            padding-top: 30px; 
+            margin-bottom: 25px; 
+        }
+        
+        /* Secciones de álbumes */
+        .album { 
+            display: flex; 
+            align-items: flex-start; 
+            margin-bottom: 40px; 
+            padding: 15px; 
+        }
+
+        #albumes-seg { 
+            flex-direction: row-reverse; /* Imagen a la derecha */
+        }
+
+        /* Portadas */
+        .album a { 
+            flex: 0 0 250px; 
+            height: 250px; 
+            border: 2px solid #ff33cc; 
+        }
+
+        .album a img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            display: block; 
+        }
+
+        /* Info de álbum */
+        .info { 
+            flex: 1; 
+            padding: 0 20px; 
+            text-align: left; 
+        }
+
+        .info h3 { 
+            color: #00e6e6; 
+            margin: 0 0 5px; 
+        }
+
+        .info p { 
+            line-height: 1.5; 
+            margin-bottom: 10px; 
+        }
+
+             /* Botón volver */
+        .btn-volver {
+            display: inline-block;
+            margin: 40px 0;
+            padding: 10px 25px;
+            border: 2px solid #ff33cc;
+            color: #00e6e6;
+            background: transparent;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner"></div>
+
+    <div class="container">
+        <h2>Discografía de Chase Atlantic</h2>
+
+        <div class="album">
+            <a href="../albumes/atlantic.html">
+                <img src="../img/album1_1.jpg" alt="Album1">
+            </a>
+            <div class="info">
+                <h3>Chase Atlantic</h3>
+                <p>Descripción: Un debut marcado por el deseo, la juventud y el lado oscuro de los excesos.</p>
+            </div>
+        </div>
+
+        <div class="album" id="albumes-seg">
+            <a href="../albumes/part.html">
+                <img src="../img/album2.jpg" alt="Album2">
+            </a>
+            <div class="info">
+                <h3>Chase Atlantic: Part Three</h3>
+                <p>Descripción: Explora la fama y la libertad con un sonido más oscuro y experimental.</p>
+            </div>
+        </div>
+
+        <div class="album">
+            <a href="../albumes/lost.html">
+                <img src="../img/Album3.avif" alt="Album3">
+            </a>
+            <div class="info">
+                <h3>Lost in Heaven</h3>
+                <p>Descripción: Una reflexión melancólica sobre perderse entre el cielo y el caos interior.</p>
+            </div>
+        </div>
+    </div>
+       <a href="../index.html" class="btn-volver">Volver al inicio</a>
+
+    </div>
+
+</body>
+</html>
